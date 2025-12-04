@@ -609,10 +609,7 @@ const App = () => {
   };
 
   const handleAnalysis = async () => {
- setError(null);
-  setLoading(true);
-  setResult(null);
-
+ 
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY as string;
 
 if (!apiKey) {
