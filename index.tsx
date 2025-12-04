@@ -617,16 +617,6 @@ if (!apiKey) {
   return;
 }
 
-
-    if (!file && !prompt) {
-      setError("אנא העלה וידאו/תמונה או כתוב טקסט כדי להתחיל.");
-      return;
-    }
-
-    setLoading(true);
-    setResult(null);
-    setError("");
-
     try {
       const ai = new GoogleGenAI({ apiKey });
 
